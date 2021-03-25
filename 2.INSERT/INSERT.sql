@@ -13,10 +13,11 @@ INSERT INTO [ADVENTUREWORKS].[dbo].[Person]
 	[EmailPromotion],
 	[Demographics],
 	[RowGuid],
-	[ModifiedDate]
+	[ModifiedDate],
+	[Net_Amount]
 )
 VALUES
-('F','F-M-I','Poet','Bella','Elizabeth','Rochester','Ms',666,'45Female',9,'20191028 12:56:00')
+('F','F-M-I','Asst','Lia',NULL,'Derek','Ms',453,'67 Male',13,'20191028 12:56:00',8985964)
 
 INSERT INTO [ADVENTUREWORKS].[dbo].[Person]
 (
@@ -54,6 +55,15 @@ VALUES
 ('L01','London','20190808 00:00:00 AM'),
 ('N01','New York','20190808 00:00:00 AM'),
 ('PA1','Paris','20190808 00:00:00 AM')
+
+INSERT INTO [ADVENTUREWORKS].[dbo].[CountryRegion]
+(
+	[CountryRegionCode],
+	[Name],
+	[ModifiedDate]
+)
+VALUES
+('TK1','Tokyo','20190808 00:00:00 AM')
 
 SELECT * from [ADVENTUREWORKS].[dbo].[CountryRegion]
 
@@ -117,4 +127,46 @@ INSERT INTO [ADVENTUREWORKS].[dbo].[StateProvince]
 	[ModifiedDate]
 )
 VALUES
-(7,'SP6','Z01',1,'Josh',12,'20190101 02:45:00')
+(4,'SP6',NULL,0,'Lia',13,'20190101 02:45:00')
+
+INSERT INTO [ADVENTUREWORKS].[dbo].[Person_Temporal]
+(	
+	[PersonType],
+	[NameStyle],
+	[Title],
+	[FirstName],
+	[MiddleName] ,
+	[LastName],
+	[Suffix],
+	[EmailPromotion],
+	[ValidFrom],
+	[ValidTo]
+)
+VALUES
+('F','F-M-I','Asst','Lia',NULL,'Derek','Ms',453,'2006-05-08 12:35:29.1234567','2007-05-08 12:35:29.1234567'),
+('F','F-M-I','Actor','Mia',NULL,'Patrik','Mrs',234,'2006-05-08 12:35:29.1234567','2007-05-08 12:35:29.1234567'),
+('F','F-M-I','Writer','Dia',NULL,'Bell','Mrs',56,'2006-05-08 12:35:29.1234567','2007-05-08 12:35:29.1234567')
+
+
+SELECT * FROM [ADVENTUREWORKS].[dbo].[Person_Temporal]
+
+
+INSERT INTO [ADVENTUREWORKS].[dbo].[Person_Temporal_History]
+(	
+	[PersonType],
+	[NameStyle],
+	[Title],
+	[FirstName],
+	[MiddleName] ,
+	[LastName],
+	[Suffix],
+	[EmailPromotion],
+	[ValidFrom],
+	[ValidTo]
+)
+VALUES
+('F','F-M-I','Asst','Lia',NULL,'Derek','Ms',453,'2006-05-08 12:35:29.1234567','2007-05-08 12:35:29.1234567'),
+('M','F-M-I','Poet','Tom',NULL,'Ellis','Mr',5466,'2006-05-08 12:35:29.1234567','2007-05-08 12:35:29.1234567'),
+('M','F-M-I','Actor','Chris',NULL,'Evans','Mr',6456,'2006-05-08 12:35:29.1234567','2007-05-08 12:35:29.1234567')
+
+SELECT * FROM [ADVENTUREWORKS].[dbo].[Person_Temporal_History]

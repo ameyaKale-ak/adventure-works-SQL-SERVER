@@ -98,3 +98,33 @@ CREATE TABLE [ADVENTUREWORKS].[dbo].[BusinessEntityAddress]
 	RowGuid INT UNIQUE,
 	ModifiedDAte DATETIME
 )
+
+CREATE TABLE [ADVENTUREWORKS].[dbo].[Person_Temporal]
+(
+	BusinessEntityId INT PRIMARY KEY IDENTITY(100,1),
+	PersonType NCHAR(2) NOT NULL,
+	NameStyle VARCHAR(20) NOT NULL,
+	Title NCHAR(8) NULL,
+	FirstName VARCHAR(20) NOT NULL,
+	MiddleName VARCHAR(20) NULL,
+	LastName VARCHAR(20) NOT NULL,
+	Suffix NVARCHAR(10) NULL,
+	EmailPromotion INT NOT NULL,
+	ValidFrom DATETIME2(7),
+	ValidTo DATETIME2(7)
+)
+
+CREATE TABLE [ADVENTUREWORKS].[dbo].[Person_Temporal_History]
+(
+	BusinessEntityId INT PRIMARY KEY IDENTITY(100,1),
+	PersonType NCHAR(2) NOT NULL,
+	NameStyle VARCHAR(20) NOT NULL,
+	Title NCHAR(8) NULL,
+	FirstName VARCHAR(20) NOT NULL,
+	MiddleName VARCHAR(20) NULL,
+	LastName VARCHAR(20) NOT NULL,
+	Suffix NVARCHAR(10) NULL,
+	EmailPromotion INT NOT NULL,
+	ValidFrom DATETIME2(7),
+	ValidTo DATETIME2(7)
+)

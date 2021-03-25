@@ -25,4 +25,4 @@ ON			[StateProvince].[CountryRegionCode] = [CountryRegion].[CountryRegionCode]
 WHERE		[CountryRegion].[CountryRegionCode] IS NULL
 			OR
 			[StateProvince].[CountryRegionCode] IS NULL
--- returns NON MATCHING ROWS (NULL) IN BOTH TANLES tokyo , SP5, SP6
+-- returns NON MATCHING ROWS (NULL) IN BOTH TABLES tokyo , SP5, SP6

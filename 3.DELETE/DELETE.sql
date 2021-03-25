@@ -7,4 +7,10 @@ WHERE [CountryRegionCode] = 'PA1'
 DELETE FROM [ADVENTUREWORKS].[dbo].[StateProvince]
 WHERE [Name] = 'Josh'
 
+DELETE FROM [ADVENTUREWORKS].[dbo].[StateProvince]
+WHERE [StateProvinceID] = 8
+
+DELETE FROM [ADVENTUREWORKS].[dbo].[Person_Temporal]
+WHERE [BusinessEntityId] = 100
+
 DELETE FROM [ADVENTUREWORKS].[dbo].[Person]

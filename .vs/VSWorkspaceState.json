@@ -2,16 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\1.CREATE",
+    "\\10.UPDATE",
+    "\\11.UNION & UNION ALL",
+    "\\12.STORED PROCEDURES",
     "\\2.INSERT",
     "\\3.ALTER",
     "\\3.DELETE",
-    "\\4.SELECT",
     "\\5.CONSTRAINTS",
-    "\\5.CONSTRAINTS\\CHECK CONSTRAINT",
-    "\\5.CONSTRAINTS\\DEFAULT CONSTRAINT",
-    "\\5.CONSTRAINTS\\IDENTITY CONSTRAINT",
-    "\\6.USER DEFINED TYPES"
+    "\\5.CONSTRAINTS\\IDENTITY CONSTRAINT"
   ],
-  "SelectedNode": "\\3.ALTER\\ALTER.sql",
+  "SelectedNode": "\\12.STORED PROCEDURES\\SP.sql",
   "PreviewInSolutionExplorer": false
 }
