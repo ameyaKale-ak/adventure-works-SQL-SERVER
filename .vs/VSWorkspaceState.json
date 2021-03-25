@@ -1,0 +1,17 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\1.CREATE",
+    "\\2.INSERT",
+    "\\3.ALTER",
+    "\\3.DELETE",
+    "\\4.SELECT",
+    "\\5.CONSTRAINTS",
+    "\\5.CONSTRAINTS\\CHECK CONSTRAINT",
+    "\\5.CONSTRAINTS\\DEFAULT CONSTRAINT",
+    "\\5.CONSTRAINTS\\IDENTITY CONSTRAINT",
+    "\\6.USER DEFINED TYPES"
+  ],
+  "SelectedNode": "\\3.ALTER\\ALTER.sql",
+  "PreviewInSolutionExplorer": false
+}
