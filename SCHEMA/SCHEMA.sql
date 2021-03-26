@@ -48,7 +48,7 @@ CREATE PROC usp_GetNameCityById(
 )
 AS
 BEGIN
-	SELECT [Name], [City]
+	SELECT  [Name], [City]
 	FROM	[ADVENTUREWORKS].[dbo].[TestingTable]
 	WHERE   [Id]=@id
 END
@@ -68,7 +68,7 @@ ALTER PROC usp_GetNameCityById(
 )
 AS
 BEGIN
-	SELECT [Name], [City]
+	SELECT  [Name], [City]
 	FROM	[ADVENTUREWORKS].[test_schema].[TestingTable]
 	WHERE   [Id]=@id	
 END

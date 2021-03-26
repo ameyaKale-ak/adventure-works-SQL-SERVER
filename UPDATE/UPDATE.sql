@@ -9,3 +9,7 @@ WHERE		[BusinessEntityId] = 104
 UPDATE		[ADVENTUREWORKS].[dbo].[Person]
 SET			[Title] = 'Actor'
 WHERE		[FirstName] = 'Sherlock'
+
+UPDATE		[ADVENTUREWORKS].[dbo].[Person]
+SET			[Title] = 'Student'
+WHERE		[Title] IS NULL
