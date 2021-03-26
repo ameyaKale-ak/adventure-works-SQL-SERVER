@@ -71,8 +71,5 @@ SELECT 		[RowGuid],
 FROM		[ADVENTUREWORKS].[dbo].[Person]
 ORDER BY	[RowGuid] DESC, [FirstName] ASC
 
-SELECT TOP 3 [BusinessEntityId], [FirstName] FROM [ADVENTUREWORKS].[dbo].[Person] ORDER BY [BusinessEntityId]
-SELECT TOP 80 PERCENT [BusinessEntityId], [FirstName] FROM [ADVENTUREWORKS].[dbo].[Person] ORDER BY [BusinessEntityId] DESC
-
 SELECT 		CONCAT([FirstName],' is a ',[Title]) AS [People's Profession]
 FROM		[ADVENTUREWORKS].[dbo].[Person]
