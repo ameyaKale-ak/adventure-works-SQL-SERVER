@@ -10,3 +10,10 @@ SELECT IDENT_CURRENT('[ADVENTUREWORKS].[dbo].[StateProvince]') -- table specific
 
 DBCC CHECKIDENT ('[ADVENTUREWORKS].[dbo].[StateProvince]',RESEED,4)
 GO
+
+DBCC CHECKIDENT ('[ADVENTUREWORKS].[dbo].[Person_temporal]',RESEED,99)
+GO
+
+
+DBCC CHECKIDENT ('[ADVENTUREWORKS].[dbo].[Person_temporal_History]',RESEED,99)
+GO

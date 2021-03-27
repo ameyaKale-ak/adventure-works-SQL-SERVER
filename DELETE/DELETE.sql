@@ -10,7 +10,7 @@ WHERE [Name] = 'Josh'
 DELETE FROM [ADVENTUREWORKS].[dbo].[StateProvince]
 WHERE [StateProvinceID] = 8
 
-DELETE FROM [ADVENTUREWORKS].[dbo].[Person_Temporal]
+DELETE FROM [ADVENTUREWORKS].[dbo].[Person_Temporal_History]
 WHERE [BusinessEntityId] = 100
 
 DELETE FROM [ADVENTUREWORKS].[dbo].[Person]

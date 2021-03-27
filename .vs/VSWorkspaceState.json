@@ -1,16 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\1.CREATE",
-    "\\10.UPDATE",
-    "\\11.UNION & UNION ALL",
-    "\\12.STORED PROCEDURES",
-    "\\2.INSERT",
-    "\\3.ALTER",
-    "\\3.DELETE",
-    "\\5.CONSTRAINTS",
-    "\\5.CONSTRAINTS\\IDENTITY CONSTRAINT"
+    "\\STORED PROCEDURES",
+    "\\USER DEFINED FUNCTIONS",
+    "\\VIEWS"
   ],
-  "SelectedNode": "\\12.STORED PROCEDURES\\SP.sql",
+  "SelectedNode": "\\USER DEFINED FUNCTIONS\\TABLE FUNCTIONS.sql",
   "PreviewInSolutionExplorer": false
 }
